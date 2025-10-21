@@ -9,7 +9,7 @@ const generateToken = (id) => {
 };
 
 // Set token in httpOnly cookie
-cconst setTokenCookie = (res, token) => {
+const setTokenCookie = (res, token) => {
   res.cookie('token', token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
